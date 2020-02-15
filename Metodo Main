@@ -1,0 +1,13 @@
+
+package metodosnumericos;
+
+import javax.swing.JFrame;
+
+public class MetodosNumericos {
+    
+    public static void main(String[] args) {
+       Interfaz v = new Interfaz();
+       v.setVisible(true);
+       
+    }
+}
