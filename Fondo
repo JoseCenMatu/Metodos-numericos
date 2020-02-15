@@ -1,0 +1,42 @@
+package metodosnumericos;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class Fondo extends javax.swing.JPanel {
+
+    public Fondo() {
+        initComponents();
+    }
+
+    public void paint(Graphics g){
+        Dimension d = this.getSize();
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Imagenes/01.jpg"));
+        g.drawImage(icon.getImage(), 0, 0, d.width, d.height, null);
+        this.setOpaque(false);
+        super.paintChildren(g);
+        
+        
+    }
+    
+    
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+    }// </editor-fold>                        
+
+
+    // Variables declaration - do not modify                     
+    // End of variables declaration                   
+}
